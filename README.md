@@ -13,9 +13,11 @@ _**Lock any dripleaf state via redstone**_
 
 ## What Does This Mod Do?
 
-[Revolutionizes Minecraft building forever](https://www.youtube.com/watch?v=a1wtKudHYFs&t=1731s) by
-allowing dripleaf blocks to be locked in bent positions—not just the unbent state—when getting
-a redstone signal.
+[![Revolutionizes Minecraft building forever](_static/bdubs.png)](https://www.youtube.com/watch?v=a1wtKudHYFs&t=1731s)
+
+This mod implements a feature asked for by legendary redstoner [@BDoubleO100](https://www.youtube.com/@bdoubleo)
+to allow dripleaf blocks to be locked in bent positions—not just the unbent state—when getting
+a redstone signal—thus revolutionizing Minecraft building forever.
 
 ### Planned Features
 
