@@ -6,7 +6,7 @@
 ![supported versions](https://img.shields.io/badge/Supported_Versions-1.20.3--1.20.4-blue)
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/leafstone)](https://modrinth.com/mod/leafstone)
 
-_**Trigger dripleaf state via redstone**_
+_**Lock any dripleaf state via redstone**_
 
 ![logo](_static/logo_big.png)
 
