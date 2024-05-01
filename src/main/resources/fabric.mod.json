@@ -3,39 +3,30 @@
 	"id": "leafstone",
 	"version": "${version}",
 	"name": "Leafstone",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Trigger dripleaf state via redstone",
 	"authors": [
-		"Me!"
+		"OpenBagTwo"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/OpenBagTwo/Leafstone",
+		"sources": "https://github.com/OpenBagTwo/Leafstone",
+        "issues": "https://github.com/OpenBagTwo/Leafstone/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "AGPL-3.0-only",
 	"icon": "assets/leafstone/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"io.github.openbagtwo.leafstone.Leafstone"
 		],
-		"client": [
-			"io.github.openbagtwo.leafstone.LeafstoneClient"
-		]
 	},
 	"mixins": [
-		"leafstone.mixins.json",
-		{
-			"config": "leafstone.client.mixins.json",
-			"environment": "client"
-		}
+		"leafstone.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.4",
+		"minecraft": ">=1.20.3 <=1.20.4",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
