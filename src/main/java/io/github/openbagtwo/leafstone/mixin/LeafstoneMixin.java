@@ -1,6 +1,7 @@
 package io.github.openbagtwo.leafstone.mixin;
 
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
+import java.util.Random;
 import net.minecraft.block.BigDripleafBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -8,7 +9,6 @@ import net.minecraft.block.enums.Tilt;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -33,7 +33,7 @@ public abstract class LeafstoneMixin {
   }
 
   @Inject(
-      method="scheduledTick(Lnet/minecraft/block/BlockState;Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/random/Random;)V",
+      method="scheduledTick(Lnet/minecraft/block/BlockState;Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/util/math/BlockPos;Ljava/util/Random;)V",
       at=@At("HEAD"),
       cancellable = true
   )
@@ -56,7 +56,7 @@ public abstract class LeafstoneMixin {
       this.locked = false;
       int delay = getTiltDelayMap().getInt(state.get(getTiltEnum()));
       if (delay >= 0) {
-        world.scheduleBlockTick(pos, (BigDripleafBlock) (Object) this, delay);
+        world.getBlockTickScheduler().schedule(pos, (BigDripleafBlock) (Object) this, delay);
       }
     }
   }
