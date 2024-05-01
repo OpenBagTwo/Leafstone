@@ -3,7 +3,7 @@
 	"id": "leafstone",
 	"version": "${version}",
 	"name": "Leafstone",
-	"description": "Trigger dripleaf state via redstone",
+	"description": "Patch dripleaf redstone interactions so any state can be locked",
 	"authors": [
 		"OpenBagTwo"
 	],
@@ -18,7 +18,7 @@
 	"entrypoints": {
 		"main": [
 			"io.github.openbagtwo.leafstone.Leafstone"
-		],
+		]
 	},
 	"mixins": [
 		"leafstone.mixins.json"

@@ -14,11 +14,12 @@ _**Trigger dripleaf state via redstone**_
 ## What Does This Mod Do?
 
 [Revolutionizes Minecraft building forever](https://www.youtube.com/watch?v=a1wtKudHYFs&t=1731s) by
-locking small and big dripleaf blocks in the 45° bent position when given a redstone signal.
+allowing dripleaf blocks to be locked in bent positions—not just the unbent state—when getting
+a redstone signal.
 
 ### Planned Features
 
-- Option to allow locking of dripleaf in unbent and partially bent states
+- Option to allow redstone signals to **trigger** different dripleaf states
 - Configuration via modmenu
 - Ports to all versions of the game with dripleaf (so 1.17+)
 - Neoforge port
