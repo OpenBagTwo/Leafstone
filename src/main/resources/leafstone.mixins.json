@@ -3,7 +3,7 @@
 	"package": "io.github.openbagtwo.leafstone.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"LeafstoneMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
