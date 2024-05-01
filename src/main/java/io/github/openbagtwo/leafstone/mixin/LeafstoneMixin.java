@@ -56,7 +56,7 @@ public abstract class LeafstoneMixin {
       this.locked = false;
       int delay = getTiltDelayMap().getInt(state.get(getTiltEnum()));
       if (delay >= 0) {
-        world.scheduleBlockTick(pos, (BigDripleafBlock) (Object) this, delay);
+        world.createAndScheduleBlockTick(pos, (BigDripleafBlock) (Object) this, delay);
       }
     }
   }
