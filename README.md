@@ -3,7 +3,7 @@
 ![server mod](https://img.shields.io/badge/Server\/Client-server-critical)
 ![mod loader: fabric](https://img.shields.io/badge/Mod_Loader-fabric%2Fquilt-a4cc37)
 [![build status](https://github.com/OpenBagTwo/Leafstone/actions/workflows/build.yml/badge.svg)](https://github.com/OpenBagTwo/ShriekierShriekers/actions/workflows/build.yml)
-![supported versions](https://img.shields.io/badge/Supported_Versions-1.17--1.20.6-blue)
+![supported versions](https://img.shields.io/badge/Supported_Versions-1.17--1.22-blue)
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/leafstone)](https://modrinth.com/mod/leafstone)
 
 _**Lock any dripleaf state via redstone**_

@@ -10,6 +10,8 @@ import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+import net.minecraft.world.block.WireOrientation;
+import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.gen.Accessor;
@@ -49,7 +51,7 @@ public abstract class LeafstoneMixin {
    * @reason If redstone signal is removed, schedule the next tilt update
    */
   @Overwrite
-  public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+  protected void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, @Nullable WireOrientation wireOrientation, boolean notify) {
     if (world.isReceivingRedstonePower(pos)){
       this.locked = true;
     } else if (this.locked) {
@@ -61,3 +63,4 @@ public abstract class LeafstoneMixin {
     }
   }
 }
+
